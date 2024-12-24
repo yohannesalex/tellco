@@ -1,0 +1,53 @@
+Id_COLUMNS = ["Bearer Id", 'MSISDN/Number', 'IMEI', 'IMSI']
+CATEGORICAL_COLUMNS = ["Last Location Name",
+                       "Handset Manufacturer", "Handset Type"]
+DATE_TIME_COLUMNS = ['Start', 'End']
+NUMERIC_COLUMNS = ['Start ms',
+                   'End ms',
+                   'Dur. (ms).1',
+                   'Avg RTT DL (ms)',
+                   'Avg RTT UL (ms)',
+                   'Avg Bearer TP DL (kbps)',
+                   'Avg Bearer TP UL (kbps)',
+                   'TCP DL Retrans. Vol (Bytes)',
+                   'TCP UL Retrans. Vol (Bytes)',
+                   'DL TP < 50 Kbps (%)',
+                   '50 Kbps < DL TP < 250 Kbps (%)',
+                   '250 Kbps < DL TP < 1 Mbps (%)',
+                   'DL TP > 1 Mbps (%)',
+                   'UL TP < 10 Kbps (%)',
+                   '10 Kbps < UL TP < 50 Kbps (%)',
+                   '50 Kbps < UL TP < 300 Kbps (%)',
+                   'UL TP > 300 Kbps (%)',
+                   'Activity Duration DL (ms)',
+                   'Activity Duration UL (ms)',
+                   'Nb of sec with Vol DL < 6250B',
+                   'Nb of sec with Vol UL < 1250B',
+                   'Social Media DL (Bytes)',
+                   'Social Media UL (Bytes)',
+                   'Google DL (Bytes)',
+                   'Google UL (Bytes)',
+                   'Email DL (Bytes)',
+                   'Email UL (Bytes)',
+                   'Youtube DL (Bytes)',
+                   'Youtube UL (Bytes)',
+                   'Netflix DL (Bytes)',
+                   'Netflix UL (Bytes)',
+                   'Gaming DL (Bytes)',
+                   'Gaming UL (Bytes)',
+                   'Other UL (Bytes)',
+                   'Other DL (Bytes)',
+                   'Total UL (Bytes)',
+                   'Total DL (Bytes)']
+
+TOTAL_APPLICATION_COLUMNS = ['Social Media Data Volume (Bytes)',
+        'Google Data Volume (Bytes)',
+        'Email Data Volume (Bytes)',
+        'Youtube Data Volume (Bytes)',
+        'Netflix Data Volume (Bytes)',
+        'Gaming Data Volume (Bytes)',
+        'Other Data Volume (Bytes)',
+        'Total Data Volume (Bytes)']
+
+
+
