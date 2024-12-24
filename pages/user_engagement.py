@@ -24,7 +24,7 @@ helper = DfHelper()
 import matplotlib.pyplot as plt
 #@st.cache_data
 def loadCleanData():
-    df = pd.read_csv("../src/data/my_clean_data.csv")
+    df = pd.read_csv("./data/my_clean_data.csv")
     return df
 
 
@@ -167,7 +167,7 @@ def app():
         ''')
         if st.button('Save Model'):
             helper.save_csv(user_engagement,
-                            '../src/data/user_engagement.csv', index=True)
+                            './data/user_engagement.csv', index=True)
 
             with open("./models/user_engagement.pkl", "wb") as f:
                 pickle.dump(kmeans, f)

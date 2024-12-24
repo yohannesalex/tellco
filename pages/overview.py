@@ -50,17 +50,17 @@ NUMERIC_COLUMNS = ['Start ms',
                    'Total DL (Bytes)']
 
 def loadDescription():
-    df = pd.read_excel("../src/data/Field_Descriptions.xlsx")
+    df = pd.read_excel("./data/Field_Descriptions.xlsx")
     return df
 
 
 def loadOriginalData():
-    df = pd.read_csv("../src/data/Week1_challenge_data_source(CSV).csv")
+    df = pd.read_csv("./data/Week1_challenge_data_source(CSV).csv")
     return df
 
 
 def loadPreprocessedData():
-    df = pd.read_csv("../src/data/my_clean_data.csv")
+    df = pd.read_csv("./data/my_clean_data.csv")
     return df
 
 

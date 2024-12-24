@@ -22,7 +22,7 @@ helper = DfHelper()
 
 @st.cache_data
 def loadCleanData():
-    df = pd.read_csv("../src/data/my_clean_data.csv")
+    df = pd.read_csv("./data/my_clean_data.csv")
     return df
 
 
@@ -190,7 +190,7 @@ def app():
         ''')
         if st.button('Save CSV'):
             helper.save_csv(user_experience,
-                            '../src/data/TellCo_user_experience_data.csv', index=True)
+                            './data/TellCo_user_experience_data.csv', index=True)
 
             with open("./models/TellCo_user_experiance.pkl", "wb") as f:
                 pickle.dump(kmeans, f)

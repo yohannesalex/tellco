@@ -18,7 +18,7 @@ from PIL import Image
 from sklearn.cluster import KMeans
 @st.cache_data
 def load_data():
-    data = pd.read_csv('../src/data/my_clean_data2.csv')
+    data = pd.read_csv('./data/my_clean_data.csv')
     return data
 
 
@@ -99,17 +99,17 @@ def app():
     #TCP values in the dataset.
         
     st.write("**TCP values in the dataset**")
-    image = Image.open('../src/data/first.jpg')
+    image = Image.open('./data/first.jpg')
     st.image(image, caption='TCP values in the dataset', use_column_width=True)
               
     st.write("**RTT values in the dataset.**")
     
-    image = Image.open('../src/data/second.jpg')
+    image = Image.open('./data/second.jpg')
     st.image(image, caption='RTT values in the dataset', use_column_width=True)
     
     st.write("**Throughput values in the dataset**")
     
-    image = Image.open('../src/data/third.jpg')
+    image = Image.open('./data/third.jpg')
     st.image(image, caption='Throughput values in the dataset', use_column_width=True)
     
     st.markdown(' 3. Compute & report:')
@@ -123,19 +123,19 @@ def app():
     # Display the first few rows of the aggregated DataFrame
     st.write(handset_type_df.head())
     
-    image = Image.open('..src/data/fourth.jpg')
+    image = Image.open('./data/fourth.jpg')
     st.image(image, caption='total_avg_tp', use_column_width=True)   
     
     
-    image = Image.open('../src/data/fivth.jpg')
+    image = Image.open('./data/fivth.jpg')
     st.image(image, caption='total_avg_tp top 20', use_column_width=True) 
    
 
-    image = Image.open('../src/data/6.jpg')
+    image = Image.open('./data/6.jpg')
     st.image(image, caption='Total Average Throughput', use_column_width=True) 
     
     
-    image = Image.open('../src/data/7.jpg')
+    image = Image.open('./data/7.jpg')
     st.image(image, caption='Total Average Throughput', use_column_width=True) 
 
    

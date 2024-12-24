@@ -27,14 +27,14 @@ helper = DfHelper()
 
 @st.cache_data
 def getEngagemetData():
-    df = pd.read_csv("../src/data/TellCo_user_engagements.csv")
+    df = pd.read_csv("./data/TellCo_user_engagements.csv")
     print(df.info())
     return df
 
 
 @st.cache_data
 def getExperienceData():
-    df = pd.read_csv("../src/data/TellCo_user_experiance.csv")
+    df = pd.read_csv("./data/TellCo_user_experiance.csv")
     print(df.info())
     return df
 
