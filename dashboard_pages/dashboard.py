@@ -4,14 +4,14 @@ import sys
 sys.path.append('.')
 sys.path.append(os.path.abspath(os.path.join('./scripts')))
 
-from pages import Data_Overview
+from dashboard_pages import Data_Overview
 #from pages import user_engagement
-from pages import experiance_new
+from dashboard_pages import experiance_new
 #from pages import user_satisfaction
 #from pages import user_experience
-from pages import over
-from pages import sat
-from pages import Business
+from dashboard_pages import over
+from dashboard_pages import sat
+from dashboard_pages import Business
 
 PAGES = {
     "Home" : Business,
