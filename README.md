@@ -15,7 +15,7 @@ Before proceeding, ensure you have the following installed:
 
 ## Setup Instructions
 
-### 1. Clone the Repository (if applicable)
+### 1. Clone the Repository 
 If the project is hosted on a Git repository, clone it using the following commands:
 ```bash
 git clone https://github.com/yohannesalex/tellco
@@ -61,13 +61,6 @@ pip list
    source venv/bin/activate
    ```
 
-2. **Run the main application**:
-   ```bash
-   python <main_script>.py
-   ```
-   Replace `<main_script>.py` with the name of the main Python file for this project.
-
----
 
 ## Requirements
 The following dependencies are required and are listed in the `requirements.txt` file:
