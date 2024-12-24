@@ -13,7 +13,7 @@ from io import StringIO
 
 
 def load_data():
-    data = pd.read_csv('../src/data/my_clean_data.csv')
+    data = pd.read_csv('./data/my_clean_data.csv')
     return data
 
 

@@ -26,21 +26,21 @@ from io import StringIO
 @st.cache_data
 def load_data():
     data_load_state = st.text('Loading data...')
-    data = pd.read_csv('../src/data/my_clean_data.csv')
+    data = pd.read_csv('./data/my_clean_data.csv')
     data_load_state.text('Loading data... done!')     
     return data
 
 @st.cache_data
 def load_engagement_data():
     data_load_state = st.text('Loading engagement data...')
-    data = pd.read_csv("../src/data/TellCo_user_engagements.csv")
+    data = pd.read_csv("./data/TellCo_user_engagements.csv")
     data_load_state.text('Loading engagement data... done!')
     return data
 
 @st.cache_data
 def user_experiance_data():
     data_load_state = st.text('Loading user experience data...')
-    data = pd.read_csv("../src/data/TellCo_user_experience_data.csv")
+    data = pd.read_csv("./data/TellCo_user_experience_data.csv")
     data_load_state.text('Loading user experience data... done!')
     return data
 def data_info(df):
@@ -234,7 +234,7 @@ def app():
     
     #st.image(Image.open(BytesIO(image_bytes)))
     if st.button('Save Satisfaction Data as CSV'):
-        user_satisfaction_df.to_csv('../src/data/TellCo_user_satisfaction.csv')
+        user_satisfaction_df.to_csv('../data/TellCo_user_satisfaction.csv')
     
     st.write('**Aggregate the average satisfaction & experience score per cluster.**')
     
